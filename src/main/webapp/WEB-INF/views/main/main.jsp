@@ -17,7 +17,6 @@
 </head>
 <body>
 	<%-- <%@ include file="/WEB-INF/views/common/loginModal.jsp"%> --%>
-	
 	<%@ include file="/WEB-INF/views/common/header.jsp"%>
 		<div class="home_container">
 		<div id="main_container">
