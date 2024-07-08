@@ -122,7 +122,10 @@ function alarmAll() {
 						// output += "<ul onclick='urlClick(\"/heehee/purchasedetail/" + item.reqSeq + "\")'>";
 						// output += "<ul onclick='urlClick(\"/heehee/purchasedetail\/" + item.reqSeq + "\")'" + " alNum=" + item.alNum + ">";
 						
-						output += "<ul onclick='urlClick(\"/heehee/mypage/purchasedetail\/" + item.reqSeq + "\")'" + " alNum=" + item.alNum + " alCheck=" + item.alCheck + ">";
+						// 중고, 경매 url 다름... 일단 마이페이지로 이동
+						// output += "<ul onclick='urlClick(\"/heehee/mypage/purchasedetail\/" + item.reqSeq + "\")'" + " alNum=" + item.alNum + " alCheck=" + item.alCheck + ">";
+						
+						output += "<ul onclick='urlClick(\"/heehee/mypage/main\")'" + " alNum=" + item.alNum + " alCheck=" + item.alCheck + ">";
 						output += "<li class='alarm_date'>" + item.alDate + "</li>";
 						output += "<li>" + item.sender + "</li>";
 						output += "<li>" + item.alContent + "</li>";
@@ -258,7 +261,10 @@ function alarmUnck() {
                             // output += "<ul onclick='urlClick(\"/heehee/purchasedetail/" + item.reqSeq + "\")'>";
                             // output += "<ul onclick='urlClick(\"/heehee/purchasedetail\/" + item.reqSeq + "\")'" + " alNum=" + item.alNum + ">";
                             
+                            // 중고, 경매 url 다름... 일단 마이페이지로 이동
                             output += "<ul onclick='urlClick(\"/heehee/mypage/purchasedetail\/" + item.reqSeq + "\")'" + " alNum=" + item.alNum + " alCheck=" + item.alCheck + ">";
+                            
+                            output += "<ul onclick='urlClick(\"/heehee/mypage/main\")'" + " alNum=" + item.alNum + " alCheck=" + item.alCheck + ">";
                             output += "<li class='alarm_date'>" + item.alDate + "</li>";
                             output += "<li>" + item.sender + "</li>";
                             output += "<li>" + item.alContent + "</li>";
