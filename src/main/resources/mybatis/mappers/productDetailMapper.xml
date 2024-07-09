@@ -362,10 +362,10 @@ WHERE RNUM <![CDATA[<]]> 31
          )
          AND SELL.ID IS NOT NULL
        GROUP BY SELL.PRODUCT_SEQ, IMG.IMG_SEQ, IMG.IMG_NAME
-    )
-    ORDER BY CRE_DATE DESC
-  )
-WHERE ROWNUM <![CDATA[<]]> 5
+	    )
+	    ORDER BY CRE_DATE DESC
+	  )
+	WHERE ROWNUM <![CDATA[<]]> 5
 
 	</select>
 	

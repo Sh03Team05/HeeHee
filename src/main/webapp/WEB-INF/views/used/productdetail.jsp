@@ -284,7 +284,6 @@
 							<img class="star" src="https://sh-heehee-bucket.s3.ap-northeast-2.amazonaws.com/images/sell/star0.png">
 						</div>
 					</div>
-
 					<div id="seller_info">
 						<a class="seller" href="${path}/sell/sellerProfile/${info.id}">${info.nickName}</a>
 						<p class="seller_comm">${info.userIntroduce}</p>
@@ -334,7 +333,6 @@
 	document.addEventListener('DOMContentLoaded', function () {
         var userRating = ${info.userRating}; // EL문법때문에 js파일로 따로 못뺌
         var stars = document.querySelectorAll('#seller_score .star');
-
         for (var i = 0; i < userRating; i++) {
             stars[i].src = 'https://sh-heehee-bucket.s3.ap-northeast-2.amazonaws.com/images/sell/star1.png';
         }
