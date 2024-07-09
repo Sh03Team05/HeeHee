@@ -361,11 +361,13 @@ WHERE RNUM <![CDATA[<]]> 31
               AND IMG_CATE_SEQ = 2
          )
          AND SELL.ID IS NOT NULL
+         AND SELL.PRO_STATUS NOT IN ('판매중지', '판매보류', '거래완료', '예약중')
        GROUP BY SELL.PRODUCT_SEQ, IMG.IMG_SEQ, IMG.IMG_NAME
-	    )
-	    ORDER BY CRE_DATE DESC
-	  )
-	WHERE ROWNUM <![CDATA[<]]> 5
+      )
+      ORDER BY CRE_DATE DESC
+    )
+  WHERE ROWNUM <![CDATA[<]]> 5
+
 
 	</select>
 	
